@@ -1,0 +1,896 @@
+/* GENEL AYARLAR */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* ZORUNLU UYARI ŞERİDİ */
+
+.uyari{
+    background-color: red;
+    color: white;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background-color: #003B7A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+    margin-top: 20px;
+}
+
+.logo{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: #D62828;
+}
+
+/* HERO */
+
+.hero{
+    height: 115vh;
+    width: 210vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../dardanel.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content{
+    color: white;
+    margin-top: -50px;
+}
+
+.hero h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* BUTON */
+
+.btn{
+    background-color: #D62828;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+    border-radius: 8px;
+
+    display: inline-block;
+}
+
+.btn:hover{
+    background-color: #b91f1f;
+}
+
+/* HAKKIMIZDA */
+
+.about-preview{
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about-preview h2{
+    color: #003B7A;
+    margin-bottom: 20px;
+}
+
+/* ÜRÜNLER */
+
+.products{
+    background-color: #f5f5f5;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.products h2{
+    color: #003B7A;
+    margin-bottom: 40px;
+}
+
+.product-cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color: #003B7A;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #003B7A;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.about-image{
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ff3b00;
+}
+.card{
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:60px 20px;
+}
+
+.stat-box{
+    background:white;
+    padding:40px;
+    width:250px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-box h3{
+    color:#003399;
+    font-size:50px;
+}
+.logo img{
+    height: 50px;
+    width: auto;
+    display: block;
+}
+.why-us{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.why-us h2{
+    color:#003399;
+    margin-bottom:40px;
+}
+.why-us h2::after{
+    content:'';
+    display:block;
+    width:80px;
+    height:4px;
+    background:#ff3b00;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.feature{
+    width:300px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:all 0.3s ease;
+    cursor:pointer;
+}
+
+.feature:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.feature h3{
+    margin-bottom:15px;
+    color:#003399;
+}
+
+.stat-box{
+    transition:all 0.3s ease;
+    cursor:pointer;
+}
+
+.stat-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+/* HAKKIMIZDA SAYFASI */
+
+.page-banner{
+    background:#003399;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.page-banner h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.about-image{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.about-image img{
+    width:80%;
+    max-width:900px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.about-content{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+    padding:20px;
+}
+
+.about-content h2{
+    color:#003399;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.mission-vision{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:60px 20px;
+}
+
+.box{
+    width:400px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.box:hover{
+    transform:translateY(-10px);
+}
+
+.box h2{
+    color:#003399;
+    margin-bottom:15px;
+}
+/* SADECE HAKKIMIZDA SAYFASI */
+
+.about-hero{
+    height: 100vh;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../fabrika.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.about-overlay{
+    color:white;
+}
+
+.about-overlay h1{
+    font-size:60px;
+    margin-bottom:20px;
+    text-shadow:0 3px 10px rgba(0,0,0,0.4);
+}
+
+.about-overlay p{
+    font-size:22px;
+    max-width:700px;
+    margin:auto;
+}
+
+.page-banner p{
+font-size:20px;
+}
+
+/* YAZI ALANI */
+
+.about-content{
+max-width:1000px;
+margin;
+padding:20px 40px;
+text-align;
+}
+
+.about-content h2{
+color:#003399;
+font-size:40px;
+margin-bottom:30px;
+}
+
+.about-content p{
+    font-size:20px;
+    line-height:2;
+    max-width:1000px;
+    margin:0 auto 30px auto;
+}
+
+/* MİSYON VİZYON */
+
+.mission-vision{
+display;
+justify-content;
+gap:30px;
+flex-wrap;
+padding:60px 20px;
+}
+
+.box{
+width:500px;
+background;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.box{
+transform(-10px);
+}
+
+.box h2{
+color:#003399;
+font-size:35px;
+margin-bottom:15px;
+}
+.box p{
+    font-size:18px;
+}
+.about-intro{
+    text-align:center;
+    padding:80px 10%;
+}
+
+.about-intro h2{
+    color:#003399;
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.about-intro p{
+    max-width:900px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.8;
+}
+/* ÜRÜNLER SAYFASI */
+.products-banner{
+    height:60vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("urunler-banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.products-banner h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.products-banner p{
+    font-size:22px;
+}
+
+.products-section{
+    padding:80px 8%;
+    background:#f8f9fa;
+}
+
+.category-title{
+    text-align:center;
+    color:#003399;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.category-title::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:4px;
+    background:#ff3b00;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+.products-grid{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.product-card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.product-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+    text-align:center;
+}
+
+.product-info h3{
+    color:#003399;
+    margin-bottom:10px;
+    font-size:22px;
+}
+
+.product-info p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* ÜRÜNLER SAYFASI İSTATİSTİKLER */
+
+.products-stats{
+    padding:70px 20px;
+    background:white;
+}
+
+.products-stats .stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.products-stats .stat-box{
+    width:220px;
+    background:#f8f9fa;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+
+    transition:0.3s;
+}
+
+.products-stats .stat-box:hover{
+    transform:translateY(-10px);
+}
+
+.products-stats .stat-box h3{
+    color:#003399;
+    font-size:40px;
+}
+/* ÜRÜNLER BANNER */
+
+.urun-banner{
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../ton.png");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.urun-banner-content{
+    color:white;
+}
+
+.urun-banner-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.urun-banner-content p{
+    font-size:22px;
+}
+/* SÜRDÜRÜLEBİLİRLİK SAYFASI */
+
+.surd-banner{
+    height: 110vh;
+    width: 210vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../deniz.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-yazi{
+    color: white;
+}
+
+.banner-yazi h1{
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.banner-yazi p{
+    font-size: 24px;
+}
+
+.about-content{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-content h2{
+    color: #003B7A;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.about-content p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    padding: 20px 20px 80px;
+}
+
+.feature{
+    width: 320px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.feature:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.feature h3{
+    color: #003B7A;
+    margin-bottom: 15px;
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    padding: 20px 20px 80px;
+}
+
+.stat-box{
+    width: 220px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.stat-box:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.stat-box h3{
+    color: #003B7A;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+/*İLETİŞİM SAYFASI*/
+
+.contact-hero{
+    height:100vh;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url("../fab.png");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.contact-overlay{
+    color:white;
+}
+
+.contact-overlay h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.contact-overlay p{
+    font-size:22px;
+}
+
+.contact-info{
+    padding:80px 10%;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.contact-card{
+    width:320px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.contact-card h2{
+    color:#003399;
+    margin-bottom:15px;
+}
+
+.contact-form{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.contact-form h2{
+    color:#003399;
+    margin-bottom:35px;
+    font-size:40px;
+}
+
+.contact-form form{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ddd;
+    border-radius:10px;
+
+    font-size:16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:none;
+    border:2px solid #003399;
+}
+
+.contact-form button{
+    background:#D62828;
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    background:#b91f1f;
+    transform:translateY(-3px);
+}
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fafafa;
+}

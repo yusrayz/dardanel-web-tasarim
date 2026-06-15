@@ -78,7 +78,7 @@ body{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),
-    url("../dardanel.png");
+    url("dardanel.png");
 
     background-size: cover;
     background-position: center;
@@ -366,7 +366,7 @@ nav ul li a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),
-    url("../fabrika.jpg");
+    url("fabrika.jpg");
 
     background-size: cover;
     background-position: center;
@@ -477,7 +477,7 @@ margin-bottom:15px;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),
-    url("urunler-banner.jpg");
+    url("ton.png");
 
     background-size:cover;
     background-position:center;
@@ -613,7 +613,7 @@ margin-bottom:15px;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),
-    url("../ton.png");
+    url("ton.png");
 
     background-size:cover;
     background-position:center;
@@ -648,7 +648,7 @@ margin-bottom:15px;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),
-    url("../deniz.png");
+    url("deniz.png");
 
     background-size: cover;
     background-position: center;
@@ -769,7 +769,7 @@ margin-bottom:15px;
         rgba(0,0,0,0.55),
         rgba(0,0,0,0.55)
     ),
-    url("../fab.png");
+    url("fab.png");
 
     background-size:cover;
     background-position:center;
